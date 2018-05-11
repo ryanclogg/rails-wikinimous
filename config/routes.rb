@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get "articles/:id", to: "articles#show", as: "article"
 
   get "articles/:id/edit", to: "articles#edit", as: "edit_article"
-  post "articles/:id", to: "articles#update"
+  patch "articles/:id", to: "articles#update"
 
-  get "articles/:id", to: "articles#detroy", as: "destroy_article"
+  delete "articles/:id", to: "articles#destroy", as: "destroy_article"
 end

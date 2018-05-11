@@ -4,4 +4,8 @@
 # Examples:
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   Character.create(name: 'Luke', movie: movies.firs
+
+10.times do
+  Article.create(title: Faker::HowIMetYourMother.character, content: Faker::HowIMetYourMother.catch_phrase )
+end

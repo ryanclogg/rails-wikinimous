@@ -1,0 +1,10 @@
+<h1>Welcome!</h1>
+
+<h2>This is <%= @article.title %></h2>
+
+<h3>Content:</h3>
+
+<p><%= @article.content %></p>
+
+<h4><%= link_to 'Update this article', edit_article_path %></h4>
+<h4><%= link_to 'Delete this article', destroy_article_path, method: :delete %></h4>
